@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Personas | EyeCare For You Growth Analysis</title>
+  <meta name="description" content="Four detailed customer personas for EyeCare For You's Direct Care Optometry practice.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    :root { --color-indigo: #6366f1; --color-rose: #f43f5e; --color-teal: #14b8a6; --color-slate-950: #020617; }
+    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob--indigo"></div>
+    <div class="aurora-blob aurora-blob--rose"></div>
+    <div class="aurora-blob aurora-blob--teal"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        </svg>
+        EyeCare For You
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="executive-summary.html" class="nav-link">Executive Summary</a></li>
+        <li><a href="personas.html" class="nav-link active">Personas</a></li>
+        <li><a href="competitive.html" class="nav-link">Competitive</a></li>
+        <li><a href="funnels.html" class="nav-link">Funnels</a></li>
+        <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+        <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <header class="page-header" data-reveal>
+        <h1>Target Personas</h1>
+        <p>Four primary customer profiles representing the ideal patients for EyeCare For You's Direct Care model</p>
+      </header>
+
+      <!-- Persona 1: Tech Executive -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <div style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--color-slate-50); background: linear-gradient(135deg, var(--color-indigo), var(--color-teal)); display: flex; align-items: center; justify-content: center;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="persona-info">
+              <h3>David Chen</h3>
+              <p class="persona-subtitle">The Tech Executive | Age 44</p>
+              <p class="text-sm text-muted mb-0">Senior Software Engineering Manager at RTP tech company</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I spend 10 hours debugging complex systems at work. The last thing I want is a doctor who treats my eyes like a 15-minute assembly line. If I'm paying either way, I'd rather pay someone who actually has time to explain what they're seeing."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$225,000</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Apex, NC</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Family</div>
+              <div class="metric-value">Married, 2 kids</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Education</div>
+              <div class="metric-value">MS Computer Science</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Insurance limits provider choices, creates rushed experiences
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Previous exams felt like "cattle herding"
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Prescription errors from rushed exams
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Key Messaging</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "60 minutes. Zero rushed decisions."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Your eyes. Our only agenda."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Technology meets time."
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 2: Proactive Parent -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <div style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--color-slate-50); background: linear-gradient(135deg, var(--color-rose), var(--color-amber)); display: flex; align-items: center; justify-content: center;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="persona-info">
+              <h3>Jennifer Martinez</h3>
+              <p class="persona-subtitle">The Proactive Parent | Age 41</p>
+              <p class="text-sm text-muted mb-0">Pharmaceutical Sales Manager (WFH)</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "Both my husband and I are myopic. When our pediatrician mentioned our 9-year-old's prescription jumped again, I started researching. Regular optometrists just keep giving her stronger glasses. I need someone who will actually DO something about it."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$185,000</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Cary, NC</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Family</div>
+              <div class="metric-value">Married, 3 kids</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Education</div>
+              <div class="metric-value">MBA, UNC</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Most optometrists don't offer myopia control
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Guilt about passing myopia to children
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Children's exams feel even more rushed
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Key Messaging</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Myopia management beyond stronger glasses."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "We see the child. And the future adult."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Time to talk about what actually works."
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 3: Presbyopia Professional -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <div style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--color-slate-50); background: linear-gradient(135deg, var(--color-teal), var(--color-emerald)); display: flex; align-items: center; justify-content: center;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="persona-info">
+              <h3>Dr. Margaret Okonkwo</h3>
+              <p class="persona-subtitle">The Presbyopia Professional | Age 52</p>
+              <p class="text-sm text-muted mb-0">Internal Medicine Physician at Duke Health</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I know what thorough looks like. I give my patients 30-minute appointments when everyone else gives 10. So when my optometrist spends 8 minutes with me and tries to upsell me on glasses, I know I'm getting the short end."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$320,000</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Apex, NC</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Family</div>
+              <div class="metric-value">Married, 1 adult child</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Education</div>
+              <div class="metric-value">MD, Johns Hopkins</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Being treated like every other patient
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Multiple progressive lens failures from rushed fittings
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Retail pressure on house brand frames
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Key Messaging</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Complex prescriptions deserve complex thinking."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Progressives fitted right the first time."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Transparent pricing. No insurance games."
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persona 4: Complex Care Senior -->
+      <section class="section" data-reveal>
+        <div class="glass-card persona-card">
+          <div class="persona-header">
+            <div style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--color-slate-50); background: linear-gradient(135deg, var(--color-amber), var(--color-rose)); display: flex; align-items: center; justify-content: center;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="persona-info">
+              <h3>Robert "Bob" Harrison</h3>
+              <p class="persona-subtitle">The Complex Care Senior | Age 68</p>
+              <p class="text-sm text-muted mb-0">Retired IT Director (IBM Research Triangle)</p>
+            </div>
+          </div>
+
+          <blockquote class="persona-quote">
+            "I spent 35 years at IBM. I know what it means to actually solve a problem versus checking a box. My dry eye is driving me crazy, and the last doctor handed me artificial tears and moved on. I have questions. I have time. I want someone who has time for me."
+          </blockquote>
+
+          <div class="persona-metrics">
+            <div class="metric-item">
+              <div class="metric-label">Household Income</div>
+              <div class="metric-value">$95,000</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Location</div>
+              <div class="metric-value">Cary, NC</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Family</div>
+              <div class="metric-value">Widowed, 2 adult children</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Education</div>
+              <div class="metric-value">BS EE, Georgia Tech</div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-8">
+            <div>
+              <h5 class="mb-4">Pain Points</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Dry eye symptoms minimized ("just use more drops")
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Medicare doesn't cover routine eye exams
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" style="stroke: var(--color-rose);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  Never sees the same doctor twice
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4">Key Messaging</h5>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "Dry eye treatment beyond drops."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "The same doctor. Every visit."
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  "60 minutes because your eyes deserve it."
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Threads -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Cross-Persona Insights</h2>
+        <div class="grid-2">
+          <div class="glass-card">
+            <h4 class="mb-4">Common Frustrations</h4>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                All have experienced the 15-minute assembly-line exam
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Willing to pay $200-400/year for quality care
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Value expertise over convenience
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Research-oriented; do homework before choosing
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Personal recommendations outweigh advertising
+              </li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <h4 class="mb-4">Geographic Distribution</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Target Personas</th>
+                    <th>Key Demographics</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Apex</td>
+                    <td>All four</td>
+                    <td>$138K HHI, 1.7% poverty</td>
+                  </tr>
+                  <tr>
+                    <td>Cary</td>
+                    <td>All four</td>
+                    <td>$129K HHI, 36% earn $200K+</td>
+                  </tr>
+                  <tr>
+                    <td>Raleigh (West)</td>
+                    <td>1, 3</td>
+                    <td>Tech concentration</td>
+                  </tr>
+                  <tr>
+                    <td>RTP</td>
+                    <td>1, 3</td>
+                    <td>85.8% professional workforce</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>EyeCare For You Growth Analysis | Research Date: January 2026</p>
+  </footer>
+</body>
+</html>

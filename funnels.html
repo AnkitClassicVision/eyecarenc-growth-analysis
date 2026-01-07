@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funnels & Unit Economics | EyeCare For You Growth Analysis</title>
+  <meta name="description" content="Patient acquisition funnel and unit economics analysis for EyeCare For You.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    :root { --color-indigo: #6366f1; --color-rose: #f43f5e; --color-teal: #14b8a6; --color-slate-950: #020617; }
+    body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob--indigo"></div>
+    <div class="aurora-blob aurora-blob--rose"></div>
+    <div class="aurora-blob aurora-blob--teal"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        </svg>
+        EyeCare For You
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="executive-summary.html" class="nav-link">Executive Summary</a></li>
+        <li><a href="personas.html" class="nav-link">Personas</a></li>
+        <li><a href="competitive.html" class="nav-link">Competitive</a></li>
+        <li><a href="funnels.html" class="nav-link active">Funnels</a></li>
+        <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+        <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <header class="page-header" data-reveal>
+        <h1>Funnels & Unit Economics</h1>
+        <p>Patient acquisition funnel analysis and lifetime value calculations for EyeCare For You</p>
+      </header>
+
+      <!-- Key Metrics -->
+      <section class="stats-grid" data-reveal>
+        <div class="glass-card stat-card">
+          <div class="stat-value">$1,800</div>
+          <div class="stat-label">Patient Lifetime Value</div>
+          <p class="text-sm text-muted mt-4">Discounted 6-year LTV at 85% retention</p>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">$75</div>
+          <div class="stat-label">Blended CAC</div>
+          <p class="text-sm text-muted mt-4">Estimated customer acquisition cost</p>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">24:1</div>
+          <div class="stat-label">LTV:CAC Ratio</div>
+          <p class="text-sm text-muted mt-4">Well above 3:1 healthy benchmark</p>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">$620K</div>
+          <div class="stat-label">Annual Revenue</div>
+          <p class="text-sm text-muted mt-4">At 70% capacity utilization</p>
+        </div>
+      </section>
+
+      <!-- Patient Acquisition Funnel -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Patient Acquisition Funnel</h2>
+        <div class="glass-card">
+          <div class="funnel">
+            <div class="funnel-stage funnel-stage-1">
+              <div class="funnel-label">
+                <strong>AWARENESS</strong>
+                <div class="text-sm text-muted">Search, Social, Referral</div>
+              </div>
+              <div class="funnel-value">100%</div>
+            </div>
+            <div class="funnel-stage funnel-stage-2">
+              <div class="funnel-label">
+                <strong>CONSIDERATION</strong>
+                <div class="text-sm text-muted">Website, Reviews, Compare</div>
+              </div>
+              <div class="funnel-value">30-40%</div>
+            </div>
+            <div class="funnel-stage funnel-stage-3">
+              <div class="funnel-label">
+                <strong>DECISION</strong>
+                <div class="text-sm text-muted">Schedule First Visit</div>
+              </div>
+              <div class="funnel-value">10-15%</div>
+            </div>
+            <div class="funnel-stage funnel-stage-4">
+              <div class="funnel-label">
+                <strong>RETENTION</strong>
+                <div class="text-sm text-muted">Annual Recall, Referrals</div>
+              </div>
+              <div class="funnel-value">85-90%</div>
+            </div>
+          </div>
+          <p class="text-sm text-muted mt-8 mb-0">
+            <strong>Overall Conversion:</strong> ~4-6% of website visitors become patients
+          </p>
+        </div>
+      </section>
+
+      <!-- Awareness Channels -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Awareness Channel Distribution</h2>
+        <div class="glass-card">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>% of New Patients</th>
+                  <th>Cost</th>
+                  <th>Quality</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Google Search (Organic)</strong></td>
+                  <td>35-40%</td>
+                  <td><span class="badge badge-success">Low</span></td>
+                  <td><span class="badge badge-success">High</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Google Business Profile</strong></td>
+                  <td>20-25%</td>
+                  <td><span class="badge badge-success">Low</span></td>
+                  <td><span class="badge badge-success">High</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Patient Referrals</strong></td>
+                  <td>15-20%</td>
+                  <td><span class="badge badge-success">Zero</span></td>
+                  <td><span class="badge badge-success">Highest</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Social Media (Organic)</strong></td>
+                  <td>5-10%</td>
+                  <td><span class="badge badge-success">Low</span></td>
+                  <td><span class="badge badge-info">Medium</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Direct/Brand</strong></td>
+                  <td>5-10%</td>
+                  <td><span class="badge badge-info">N/A</span></td>
+                  <td><span class="badge badge-success">High</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Other (Yelp, Directories)</strong></td>
+                  <td>5%</td>
+                  <td><span class="badge badge-success">Low</span></td>
+                  <td><span class="badge badge-info">Medium</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit Economics -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Unit Economics</h2>
+        <div class="grid-2">
+          <div class="glass-card">
+            <h4 class="mb-4">Revenue Per Patient</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                    <th>Margin</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Comprehensive Exam</td>
+                    <td>$175-225</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>Contact Lens Fitting</td>
+                    <td>$75-150</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>Single Vision Glasses</td>
+                    <td>$300-400</td>
+                    <td>60-70%</td>
+                  </tr>
+                  <tr>
+                    <td>Progressive Glasses</td>
+                    <td>$500-700</td>
+                    <td>60-70%</td>
+                  </tr>
+                  <tr>
+                    <td>Premium Frames</td>
+                    <td>$400-800</td>
+                    <td>50-60%</td>
+                  </tr>
+                  <tr>
+                    <td>Daily Contacts/Year</td>
+                    <td>$400-600</td>
+                    <td>20-30%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Average Revenue Per Patient</h4>
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+              <h5 class="text-muted mb-4">Year 1 Patient</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Exam</span>
+                <span>$200</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Eyewear (70% purchase)</span>
+                <span>$245</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Contact Lenses (30%)</span>
+                <span>$120</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 600;">
+                <span>Year 1 ARPP</span>
+                <span class="text-accent">~$565</span>
+              </div>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px;">
+              <h5 class="text-muted mb-4">Returning Patient (Annual)</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Exam</span>
+                <span>$200</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Eyewear (50% update)</span>
+                <span>$200</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Contact Lenses (30%)</span>
+                <span>$120</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 600;">
+                <span>Annual ARPP</span>
+                <span class="text-accent">~$520</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LTV Calculation -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Patient Lifetime Value Calculation</h2>
+        <div class="glass-card">
+          <div class="grid-2" style="align-items: start;">
+            <div>
+              <h4 class="mb-4">LTV Model</h4>
+              <p class="text-muted">Assumptions:</p>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  Average patient lifespan: 6 years
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  Annual retention rate: 85%
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  Discount rate: 10%
+                </li>
+              </ul>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px;">
+              <h5 class="text-muted mb-4">Year-by-Year Revenue</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Year 1</span>
+                <span>$565</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Year 2 (x 0.85)</span>
+                <span>$442</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Year 3 (x 0.85^2)</span>
+                <span>$376</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Year 4 (x 0.85^3)</span>
+                <span>$319</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Year 5 (x 0.85^4)</span>
+                <span>$271</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Year 6 (x 0.85^5)</span>
+                <span>$231</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; margin-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 600;">
+                <span>Gross LTV</span>
+                <span>~$2,200</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; font-weight: 700; font-size: 1.25rem;">
+                <span>Discounted LTV (10%)</span>
+                <span class="text-accent">~$1,800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAC Analysis -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Customer Acquisition Cost by Channel</h2>
+        <div class="glass-card">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>Estimated CAC</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Google Organic/SEO</td>
+                  <td><span class="text-success">$0-50</span></td>
+                  <td>Time investment only</td>
+                </tr>
+                <tr>
+                  <td>Patient Referral</td>
+                  <td><span class="text-success">$0-25</span></td>
+                  <td>Referral incentive if any</td>
+                </tr>
+                <tr>
+                  <td>Social Media Organic</td>
+                  <td><span class="text-success">$25-50</span></td>
+                  <td>Time investment</td>
+                </tr>
+                <tr>
+                  <td>Community Events</td>
+                  <td><span class="text-accent">$50-100</span></td>
+                  <td>Sponsorship + time</td>
+                </tr>
+                <tr>
+                  <td>Google Ads (if used)</td>
+                  <td><span class="text-warning">$100-200</span></td>
+                  <td>Competitive market</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; background: rgba(99,102,241,0.1); border-radius: 12px; margin-top: 1.5rem;">
+            <span style="font-weight: 600; font-size: 1.125rem;">Blended CAC Estimate</span>
+            <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-indigo-light);">$50-100</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- LTV:CAC Insight -->
+      <section class="section" data-reveal>
+        <div class="glass-card" style="border-left: 4px solid var(--color-emerald);">
+          <h3 class="mb-4">LTV:CAC Analysis</h3>
+          <div class="grid-3" style="margin-bottom: 1.5rem;">
+            <div style="text-align: center; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 12px;">
+              <div class="stat-value" style="font-size: 2rem;">$1,800</div>
+              <div class="text-sm text-muted">LTV</div>
+            </div>
+            <div style="text-align: center; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 12px;">
+              <div class="stat-value" style="font-size: 2rem;">$75</div>
+              <div class="text-sm text-muted">CAC (Blended)</div>
+            </div>
+            <div style="text-align: center; padding: 1.5rem; background: rgba(16,185,129,0.1); border-radius: 12px;">
+              <div class="stat-value" style="font-size: 2rem; color: var(--color-emerald-light);">24:1</div>
+              <div class="text-sm text-muted">LTV:CAC Ratio</div>
+            </div>
+          </div>
+          <p class="text-muted">
+            <strong>Benchmark:</strong> Healthy businesses target 3:1 or higher. A 24:1 ratio indicates either very efficient acquisition (likely for referral-heavy practice) or <strong>opportunity to invest more in marketing profitably</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Capacity Model -->
+      <section class="section" data-reveal>
+        <h2 class="section-title">Capacity & Revenue Model</h2>
+        <div class="grid-2">
+          <div class="glass-card">
+            <h4 class="mb-4">Weekly Appointment Hours</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                    <th>Total (2 docs)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Monday</td><td>9 hours</td><td>18 hours</td></tr>
+                  <tr><td>Tuesday</td><td>8 hours</td><td>16 hours</td></tr>
+                  <tr><td>Wednesday</td><td>8 hours</td><td>16 hours</td></tr>
+                  <tr><td>Thursday</td><td>9.5 hours</td><td>19 hours</td></tr>
+                  <tr><td>Friday</td><td>4.5 hours</td><td>9 hours</td></tr>
+                  <tr style="font-weight: 600;">
+                    <td colspan="2">Total Weekly</td>
+                    <td class="text-accent">78 hours</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h4 class="mb-4">Revenue Projection</h4>
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem;">
+              <h5 class="text-muted mb-4">Conservative (70% Capacity)</h5>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Monthly Comp. Exams</span>
+                <span>~108</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Exam Revenue</span>
+                <span>$21,600</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Eyewear (60% rate)</span>
+                <span>$25,920</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Contact Lens Sales</span>
+                <span>$1,134</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Specialty Services</span>
+                <span>~$3,000</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-weight: 600;">
+                <span>Monthly Revenue</span>
+                <span>~$51,650</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.125rem; color: var(--color-indigo-light);">
+                <span>Annual Revenue</span>
+                <span>~$620,000</span>
+              </div>
+            </div>
+            <div style="background: rgba(16,185,129,0.1); padding: 1rem; border-radius: 12px;">
+              <div style="display: flex; justify-content: space-between; font-weight: 600;">
+                <span>Growth Scenario (85%)</span>
+                <span class="text-success">~$750,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>EyeCare For You Growth Analysis | Research Date: January 2026</p>
+  </footer>
+</body>
+</html>
