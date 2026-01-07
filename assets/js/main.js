@@ -1,4 +1,5 @@
 // EyeCare For You Growth Analysis - Main JavaScript
+// Performance-optimized scroll handling
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Navigation Toggle
@@ -13,22 +14,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Scroll Reveal Observer
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, {
-    rootMargin: '50px',
-    threshold: 0.1
-  });
+  // Scroll Reveal Observer - Optimized settings
+  // Check for reduced motion preference
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  document.querySelectorAll('[data-reveal]').forEach(el => {
-    revealObserver.observe(el);
-  });
+  if (!prefersReducedMotion) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Use requestAnimationFrame for smoother class addition
+          requestAnimationFrame(() => {
+            entry.target.classList.add('revealed');
+          });
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px', // Trigger when element enters viewport
+      threshold: 0.05   // Low threshold for earlier animation start
+    });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      revealObserver.observe(el);
+    });
+  } else {
+    // Immediately reveal all elements if reduced motion preferred
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      el.classList.add('revealed');
+    });
+  }
 
   // Active Navigation Link
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -39,26 +53,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Smooth scroll for anchor links
+  // Smooth scroll for anchor links - use CSS scroll-behavior instead
+  // Only add click handler for scroll-margin offset
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+
+      const target = document.querySelector(targetId);
       if (target) {
+        e.preventDefault();
         target.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });
       }
-    });
+    }, { passive: false }); // Need passive: false for preventDefault
   });
 });
-
-// Lazy load spotlight cursor effect on first interaction
-let spotlightLoaded = false;
-function loadSpotlight() {
-  if (spotlightLoaded) return;
-  spotlightLoaded = true;
-  // Spotlight effect disabled for performance
-}
-document.addEventListener('mousemove', loadSpotlight, { once: true });
